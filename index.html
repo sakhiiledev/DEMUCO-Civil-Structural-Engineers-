@@ -14,27 +14,28 @@
       <img src="images/demuco-logo.png" alt="DEMUCO Logo" />
     </div>
     <nav>
-      <a href="#home">Home</a>
+      <a href="index.html">Home</a>
       <a href="about.html">About Us</a>
-      <a href="#services">Services</a>
-      <a href="#careers">Careers</a>
-      <a href="#contact">Contact Us</a>
+      <a href="services.html">Services</a>
+      <a href="careers.html">Careers</a>
+      <a href="contact.html">Contact Us</a>
     </nav>
   </header>
 
   <section class="hero" id="home">
-    <h1>Engineering a Sustainable Future</h1>
-    <p>DEMUCO delivers innovative civil and structural engineering solutions for a better tomorrow.</p>
+    <h1>DEMUCO Civil & Structural Engineers</h1>
+    <p>Innovative Engineering Solutions for a Sustainable Future</p>
+    
     <a href="#contact" class="cta">Get in Touch</a>
   </section>
 
-  <section class="welcome" id="about">
-    <h2>Welcome to DEMUCO</h2>
-    <div class="about-content">
-      <img src="images/demuco-civil-structural-engineers.jpg" alt="DEMUCO Civil & Structural Engineers" class="about-img" />
-      <div class="about-text">
-        <p>DEMUCO Civil & Structural Engineers was started by a group of professional Engineers, with extensive project Engineering to service and provide infrastructural need demand for both public and private sector, and bridging the Engineering skills shortage gap. These professional Engineers had a combined extensive Project Engineering experience which included; Commercial buildings, Mining infrastructure, Industrial infrastructure, Municipal and Government infrastructure.</p>
-        <p>Due to this extensive knowledge and experience across all sectors of Civil and Structural Engineering, the company was divided into two divisions, namely the Mining and Industrial Infrastructure Division, and the Municipal and Government Infrastructure Division.</p>
+  <section class="welcome" id="about" style="background:linear-gradient(120deg,#f7fafd 80%,#e3f0ff 100%);padding:3.5rem 0 3rem 0;">
+    <div class="about-content" style="max-width:1050px;margin:0 auto;display:flex;align-items:center;gap:2.5rem;background:#fff;border-radius:2rem;box-shadow:0 8px 40px rgba(42,77,105,0.10);padding:2.5rem 2rem;flex-wrap:wrap;">
+      <img src="images/demuco-civil-structural-engineers.jpg" alt="DEMUCO Civil & Structural Engineers" class="about-img" style="width:370px;height:240px;object-fit:cover;border-radius:1.5rem;box-shadow:0 4px 18px rgba(42,77,105,0.13);background:#fff;flex:0 0 370px;" />
+      <div class="about-text" style="flex:1 1 400px;font-size:1.18rem;color:#35506b;line-height:1.7;text-align:left;padding-left:1.5rem;">
+        <h2 style="font-size:2.2rem;color:#1a3a5d;font-weight:800;margin-bottom:1.2rem;letter-spacing:0.5px;">Welcome to DEMUCO</h2>
+        <p style="margin-bottom:1.1em;">DEMUCO Civil & Structural Engineers was started by a group of professional Engineers, with extensive project Engineering to service and provide infrastructural need demand for both public and private sector, and bridging the Engineering skills shortage gap. These professional Engineers had a combined extensive Project Engineering experience which included: <span style="color:#1871a7;font-weight:600;">Commercial buildings, Mining infrastructure, Industrial infrastructure, Municipal and Government infrastructure</span>.</p>
+        <p style="margin-bottom:0;">Due to this extensive knowledge and experience across all sectors of Civil and Structural Engineering, the company was divided into two divisions: <span style="color:#1871a7;font-weight:600;">the Mining and Industrial Infrastructure Division</span>, and <span style="color:#1871a7;font-weight:600;">the Municipal and Government Infrastructure Division</span>.</p>
       </div>
     </div>
   </section>
@@ -86,21 +87,40 @@
         <a href="#project-details" class="service-btn">Learn More</a>
       </div>
     </div>
+    
+  </section>
+
+  <section id="contact" style="margin:3rem 0 2rem 0;">
+    <h2 style="text-align:center;font-size:1.5rem;color:#1a3a5d;margin-bottom:2rem;letter-spacing:0.5px;">Where to Find Us</h2>
+    <div style="display:flex;gap:2.5rem;flex-wrap:wrap;justify-content:center;align-items:flex-start;">
+      <div style="flex:1 1 340px;max-width:420px;min-width:260px;display:flex;flex-direction:column;align-items:center;">
+        <iframe src="https://www.google.com/maps?q=21+Edison+Crescent,+Sunninghill,+Sandton,+Johannesburg,+South+Africa&output=embed" width="100%" height="240" style="border-radius:14px;border:1.5px solid #e3f0ff;box-shadow:0 2px 12px rgba(42,77,105,0.10);margin-bottom:0.7em;min-width:260px;max-width:420px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="South Africa Office Map"></iframe>
+        <div style="text-align:center;font-size:1.08em;color:#29405c;font-weight:600;margin-bottom:1.5em;">South Africa Office<br><span style="font-size:0.97em;font-weight:400;">21 Edison Crescent, Sunninghill, Sandton, Johannesburg</span></div>
+      </div>
+      <div style="flex:1 1 340px;max-width:420px;min-width:260px;display:flex;flex-direction:column;align-items:center;">
+        <iframe src="https://www.google.com/maps?q=Ulendo+8496,+Industrial,+Lusaka,+Zambia&output=embed" width="100%" height="240" style="border-radius:14px;border:1.5px solid #e3f0ff;box-shadow:0 2px 12px rgba(42,77,105,0.10);margin-bottom:0.7em;min-width:260px;max-width:420px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Zambia Office Map"></iframe>
+        <div style="text-align:center;font-size:1.08em;color:#29405c;font-weight:600;margin-bottom:1.5em;">Zambia Office<br><span style="font-size:0.97em;font-weight:400;">Ulendo 8496, Industrial, Lusaka</span></div>
+      </div>
+    </div>
   </section>
 
   <script>
-    // Smooth scroll for nav links
+    // Only enable smooth scroll for in-page anchors (starting with #)
     document.querySelectorAll('nav a').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href').substring(1);
-        const targetElement = document.getElementById(targetId);
-        if (targetElement) {
-          window.scrollTo({
-            top: targetElement.offsetTop - 80,
-            behavior: 'smooth',
-          });
+        const href = this.getAttribute('href');
+        if (href.startsWith('#')) {
+          e.preventDefault();
+          const targetId = href.substring(1);
+          const targetElement = document.getElementById(targetId);
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 80,
+              behavior: 'smooth',
+            });
+          }
         }
+        // For links to other pages, let the browser handle navigation
       });
     });
   </script>
