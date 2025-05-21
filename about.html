@@ -92,35 +92,4 @@
       </div>
     </section>
   </main>
-  <footer>
-    <div class="footer-nav">
-      <a href="index.html#home">Home</a>
-      <a href="index.html#about">About Us</a>
-      <a href="index.html#services">Services</a>
-      <a href="index.html#careers">Careers</a>
-      <a href="index.html#contact">Contact Us</a>
-    </div>
-    <p class="footer-copy">&copy; 2025 DEMUCO Civil & Structural Engineers. All rights reserved. Website designed and hosted by LIT Creations. You are visitor number: 142852</p>
-  </footer>
-  <script>
-    // Only enable smooth scroll for in-page anchors (starting with #)
-    document.querySelectorAll('nav a').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        const href = this.getAttribute('href');
-        if (href.startsWith('#')) {
-          e.preventDefault();
-          const targetId = href.substring(1);
-          const targetElement = document.getElementById(targetId);
-          if (targetElement) {
-            window.scrollTo({
-              top: targetElement.offsetTop - 80,
-              behavior: 'smooth',
-            });
-          }
-        }
-        // For links to other pages, let the browser handle navigation
-      });
-    });
-  </script>
-</body>
-</html>
+   
