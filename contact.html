@@ -12,15 +12,29 @@
 <body>
   <header>
     <div class="logo">
-      <img src="./images/demuco-logo.png" alt="DEMUCO Logo" />
+      <img src="images/demuco-logo.png" alt="DEMUCO Logo" />
     </div>
-    <nav>
+    <nav class="main-nav">
       <a href="index.html">Home</a>
       <a href="about.html">About Us</a>
       <a href="services.html">Services</a>
       <a href="careers.html">Careers</a>
       <a href="contact.html">Contact Us</a>
     </nav>
+    <button class="sidebar-toggle" aria-label="Open menu" style="background:none;border:none;display:none;cursor:pointer;padding:0 0.5em;">
+      <span style="display:block;width:28px;height:3px;background:#2a4d69;margin:6px 0;border-radius:2px;"></span>
+      <span style="display:block;width:28px;height:3px;background:#2a4d69;margin:6px 0;border-radius:2px;"></span>
+      <span style="display:block;width:28px;height:3px;background:#2a4d69;margin:6px 0;border-radius:2px;"></span>
+    </button>
+    <nav class="sidebar-nav" aria-label="Mobile Navigation">
+      <button class="sidebar-close" aria-label="Close menu">&times;</button>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="careers.html">Careers</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+    <div class="sidebar-overlay"></div>
   </header>
 
   <section class="hero" id="contact-hero">
@@ -98,7 +112,7 @@
       <a href="index.html#careers">Careers</a>
       <a href="index.html#contact">Contact Us</a>
     </div>
-    <p class="footer-copy">&copy; 2025 DEMUCO Civil & Structural Engineers. All rights reserved. Website designed and hosted by LIT Creations.</p>
+    <p class="footer-copy">&copy; 2025 DEMUCO Civil & Structural Engineers. All rights reserved.</p>
   </footer>
   <script>
     // Only enable smooth scroll for in-page anchors (starting with #)
@@ -120,5 +134,6 @@
       });
     });
   </script>
+  <script src="script.js"></script>
 </body>
 </html>
